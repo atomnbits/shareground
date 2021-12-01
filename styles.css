@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.body{
+  font-family: 'Noto Sans KR', sans-serif;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+
+
+}
+
+.container{
+  font-family: 'Noto Sans KR', sans-serif;
+
+  margin: 0 auto;
+  padding: 0 40;
+
+
+}
+
+/*=============네비바================== */
+
+.main-header{
+
+  width: 100%;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 1rem;
+  position:sticky;
+  top: 0;
+  height: 5rem;
+  z-index: 5;
+
+
+
+  background-color: white;
+  box-shadow: rgb(220, 220, 220) 0px 2px 10px;
+}
+.header-box{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+}
+
+.logo{
+  float: left;
+  color: inherit;
+  text-decoration: none;
+  margin: auto 0;
+}
+
+.main-nav{
+  padding: 0.75rem 0;
+  margin-left: 9rem;
+}
+
+.main-nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap:nowrap;
+  white-space: nowrap;
+  overflow: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  justify-content:space-around;
+}
+.main-nav ul::-webkit-scrollbar{
+    display: none;
+}
+
+.main-nav li{
+  padding: 0 2rem;
+}
+.main-nav a{
+  color: inherit;
+  text-decoration: none;
+  padding: 0;
+/*  border: 1px solid red;*/
+}
+
+.main-nav a:hover{
+  color: #adadad;
+}
+
+.nav-line{
+
+  margin: 0 -2rem;
+  margin-top: 1rem;
+
+   width: inherit;
+   border: 1px solid #E06336;
+   background-color: #E06336;
+
+}
+
+
+/*=============전시소개================== */
+
+
+
+.home-main-section{
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/*수정했음*/
+.explain-wrapper{
+
+  margin: 0;
+  margin-top: 3rem;
+/*  height: 25rem;*/
+height: auto;
+}
+/*수정했음*/
+.explain-center-text{
+
+  text-align: left;
+  background-color: rgba(255,255,255,0.8);
+  padding: 0rem 5rem;
+  word-break: keep-all;
+  
+}
+
+.home-main-section h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #F0845D 0%, #BFAD38 10%, #01B2A9 20%, #50A7D0 30%, #7B92C9 40%, #CA6C88 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.subtitle-short{
+  display: none;
+}
+.main-link{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+}
+.main-link a{
+  text-decoration: none;
+  color: #EA5404;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #EA5404;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.main-link a:hover{
+  border-color: #808080;
+  color: #808080;
+
+}
+
+
+/*=============전시 영역================== */
+
+
+
+.kunstlink{
+  margin-top: 2rem;
+}
+
+
+
+/*=============참여작가================== */
+
+
+.artist{
+  padding-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+
+}
+
+.mobile-bar{
+  display: none;
+}
+
+
+.artist-list{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+.artist-list ul{
+  list-style: none;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0;
+  flex: 0 1 300px;
+  flex-grow: 1;
+  max-width: 300px
+
+
+}
+
+.artist-list li{
+  list-style: none;
+  padding: 0.5rem 1rem;
+  text-align: center;
+
+  /*border: 1px solid red;*/
+}
+.artist-pic{
+  z-index: 1;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+  width: 140px;
+  height: 140px;
+}
+.artist-list h4{
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight:300;
+}
+.artist-line{
+}
+.artist-list .artist-list-explain{
+  text-align: justify;
+}
+.artist-list .artist-biography{
+  font-size: 0.8rem;
+  text-align: left;
+}
+.artist-list .artist-link{
+  line-height: 2rem;
+  text-align:left;
+}
+.artist-link a{
+  margin-right: 0.3rem;
+  margin-bottom: 1rem;
+
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: #EA5404;
+  border: 1px solid #EA5404;
+  border-radius: 6px;
+  padding: 0.2rem 0.4rem;
+}
+.artist-link a:hover{
+  border-color: #808080;
+  color:#808080;
+}
+
+
+/*=============공유마당이란================== */
+
+.explain-shareground{
+  padding-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+}
+.shareground-horizontal-wrapper{
+  display: flex;
+}
+.shareground-logo{
+  margin: 1rem 2rem;
+display: block;
+  float:left;
+}
+.shareground-logo img{
+  width:350px;
+  height:155px;
+}
+.shareground-explain-text{
+  display: block;
+  float: left;
+  /*border: 1px solid #E06336;*/
+  padding: 0.5rem;
+  margin: auto 0;
+
+  text-align:justify;
+  word-break: keep-all;
+}
+
+
+.vertical-line-2{
+  margin: 2.2rem 2rem;
+  margin-left: 0;
+  border-left: 1px solid #C0C0C0;
+}
+.button-explain{
+/*  border: 1px solid red;*/
+}
+.button-explain ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-around;
+
+}
+.button-explain li{
+  list-style: none;
+}
+.button-explain a{
+  text-decoration: none;
+  float:left;
+  padding: 0.6rem;
+  width: 13rem;
+  margin: 0.5rem;
+
+  text-align: center;
+  font-weight: 500;
+  color: white;
+
+  background: #EA5404;
+  border-radius: 2rem;
+}
+.button-explain a:hover{
+  background: #C7C7C7;
+}
+
+/*=============저작권 기증이란 ================== */
+
+.explain-sharedcontents{
+  padding-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+}
+.shareground-horizontal-wrapper{
+  margin-top: 2rem;
+}
+.donation-logo{
+  margin: 1rem 2rem;
+  padding: 0 6rem;
+  display: block;
+  float:left;
+}
+.donation-logo img{
+  width:154px;
+  height:185px;
+}
+.vertical-line{
+  margin: 1rem 2rem;
+  margin-left: 0;
+  border-left: 1px solid #C0C0C0;
+}
+.explain-sharedcontents{
+  margin: auto 0;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.shareground-contents-text{
+  display: block;
+  float: left;
+  /*border: 1px solid #E06336;*/
+  padding: 0.5rem;
+  margin: auto 0;
+
+  text-align: left;
+  word-break: keep-all;
+}
+
+.shareground-contents-text h3{
+  margin-top: 0;
+}
+.main-link{
+  margin-top :1.5rem;
+}
+
+
+
+/*=============풋터================== */
+
+
+.footer-class{
+  display: flex;
+  margin-top: 5rem;
+  font-size: 0.8rem;
+  padding: 1rem 3rem;
+  background-color:#C6C6C6;
+  color: black;
+}
+
+.footer-wrapper{
+  display: block;
+  float: left;
+}
+.footer-class ul{
+  list-style: none;
+  display: flex;
+  margin-top:0;
+  margin-bottom:  0.5rem;
+  padding: 0;
+}
+.footer-class li{
+  margin-right: 1rem;
+}
+.footer-class p{
+  padding: 0;
+  margin: 0;
+}
+.provider-logo{
+  margin: auto 0 auto auto;
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+    html{
+      font-size: 14px;
+    }
+
+    .main-header{
+      padding-top: 0.5rem;
+      height: 6rem;
+    }
+    .logo-wrapper{
+      display: grid;
+      place-items:center;
+    }
+    .logo{
+      float: none;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    .main-nav {
+      margin:0;
+      padding: 0.4rem 0;
+
+    }
+    .main-nav ul{
+      justify-content:space-between;
+    }
+    .nav-line{
+        margin: 0 -2rem;
+        margin-top: 0;
+
+    }
+    .main-nav li{
+      padding: 0 0.5rem;
+    }
+
+
+
+    .explain-wrapper{
+      margin: 0;
+      height: auto;
+    }
+    .explain-center-text{
+      padding: 2rem 2rem;
+    }
+    .home-main-section h1 {
+      background: linear-gradient(90deg, #F0845D 20%, #BFAD38 30%, #01B2A9 45%, #50A7D0 60%, #7B92C9 70%, #CA6C88 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 600;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .date{
+      text-align: center;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .subtitle-short
+    {
+      display:inline-block;
+    }
+    .subtitle-long
+    {
+      display: none;
+    }
+
+
+
+    .kunstlink iframe{
+      height: 500px;
+    }
+
+
+
+    .artist-title{
+      margin: 0;
+      text-align: center;
+    }
+    .artist-title h2{
+      font-size: 1.7rem;
+      margin-top: 0.3rem;
+    }
+
+    .mobile-bar{
+      display: block;
+      width: 4rem;
+      margin: 0 auto;
+      margin-bottom: 0.7rem;
+      border-top: 4px solid black;
+    }
+
+
+
+    .explain-shareground h2{
+      text-align: center;
+      font-size: 1.7rem;
+      margin-top: 0.3rem;
+    }
+    .shareground-horizontal-wrapper{
+      display:grid;
+    }
+
+    .shareground-logo{
+      display: flex;
+      margin: 0 auto;
+    }
+    .shareground-logo img{
+      width: 260px;
+      height: 115px;
+    }
+    .vertical-line{
+      display:none;
+    }
+    .vertical-line-2{
+      display: none;
+    }
+    .shareground-explain-text{
+      margin-top: 2rem;
+
+    }
+
+
+    .explain-sharedcontents h2{
+      text-align: center;
+      font-size: 1.7rem;
+      margin-top: 0.3rem;
+    }
+    .donation-logo{
+    margin: 1em auto;
+    padding: 0;
+    }
+    .donation-logo img{
+      width:120px;
+      height:144px;
+    }
+
+
+    .button-explain a{
+      font-size: 0.8rem;
+      width: 10rem;
+    }
+
+
+    .footer-class{
+      display:flex;
+      flex-direction: column;
+      height: auto;
+    }
+    .footer-class ul{
+      display: block;
+    }
+    .address{
+      font-style: normal;
+    }
+    .provider-logo{
+      margin: 1rem 0;
+      width: 200px;
+      height: 20.4px;
+
+    }
+
+
+}
